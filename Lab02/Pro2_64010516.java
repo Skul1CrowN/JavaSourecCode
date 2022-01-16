@@ -10,6 +10,7 @@ public class Pro2_64010516 {
         int playerStance = scanner.nextInt();
         int computerStance = rand.nextInt(3);
         scanner.close();
+        //Draw
         if(playerStance == computerStance) {
             System.out.printf("The computer is %s. You are %s too. It is draw",stance[computerStance],stance[playerStance]);
         }
@@ -20,6 +21,7 @@ public class Pro2_64010516 {
             if((playerStance == 0 && computerStance == 2) || (playerStance == 1 && computerStance == 0) || (playerStance == 2 && computerStance == 1)) {
                 System.out.print(" You won");
             }
+            //Lost
             else {
                 System.out.print(" You lost");
             }
