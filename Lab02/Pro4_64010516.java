@@ -4,7 +4,7 @@ public class Pro4_64010516 {
     public static String[] sort(String[] str) {
         for(int i=0;i<str.length;i++) {
             for(int j=i+1;j<str.length;j++) {
-                if(str[i].compareTo(str[j]) > 0) {
+                if(str[i].compareToIgnoreCase(str[j]) > 0) {
                     String temp = str[j];
                     str[j] = str[i];
                     str[i] = temp;

@@ -7,8 +7,9 @@ public class Pro3_64010516 {
         else
             return false;
     }
-
     public static boolean checkDate(int year, int month, int day) {
+        if(year <= 0)
+            return false;
         if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
                 && (day >= 1 && day <= 31)) {
             return true;
@@ -22,7 +23,6 @@ public class Pro3_64010516 {
         }
         return false;
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter year: (e.g., 2022): ");
@@ -33,7 +33,7 @@ public class Pro3_64010516 {
         int day = scanner.nextInt();
         scanner.close();
         if(!checkDate(year, month, day)){
-            System.out.print("Your input is invalid!");
+            System.out.print("Invalid Input: Date is not exist.");
             System.exit(0);
         }
         int q = day;
