@@ -7,7 +7,7 @@ public class Pro5_64010516 {
         int num = scanner.nextInt();
         scanner.close();
         if(num < 1 || num > 15) {
-            System.out.print("Invalid input: Number must be between 0 to 16 (0 and 16 are excluded.).");
+            System.out.print("Invalid input: Number must be from 1-15");
             System.exit(0);
         }
         for (int i = 1; i <= num; i++) {

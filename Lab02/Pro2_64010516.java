@@ -7,7 +7,7 @@ public class Pro2_64010516 {
         System.out.print("scissor (0), rock (1), paper(2): ");
         int playerStance = scanner.nextInt();
         int computerStance = (int)(Math.random() * 3);
-        if(playerStance < 0 || playerStance > 2){
+        if(playerStance < 0 || playerStance > 2) {
             System.out.println("Invalid input: Enter only number 0, 1, 2.");
             System.exit(0);
         }
