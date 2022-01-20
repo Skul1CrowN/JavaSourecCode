@@ -39,7 +39,7 @@ public class Pro2_64010516 {
         scanner.close();
         int[] list1 = input(input1);
         int[] list2 = input(input2);
-        int[] list =merge(list1, list2);
+        int[] list = merge(list1, list2);
         for(int i=0;i<list.length;i++){
             System.out.printf("%d ",list[i]);
         }
